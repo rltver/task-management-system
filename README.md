@@ -29,15 +29,34 @@ A **Task Management System** built with **Laravel**, designed to organize and ma
 - **Queue system** for asynchronous operations
 
 ---
-
 ## Installation
 
 ```bash
 git clone https://github.com/rltver/task-management-system.git
 cd task-management-system
 composer install
-cp .env.example .env
 php artisan key:generate
 php artisan migrate --seed
 php artisan storage:link
 php artisan serve
+```
+---
+## ⚙️ Database Configuration
+
+This project uses **MySQL** as its database. To configure:
+
+1. Create a MySQL database (e.g., `task_management_system`).
+2. Copy `.env.example` to `.env`:
+
+```bash
+cp .env.example .env
+```
+Update your .env file with your MySQL server credentials:
+```bash
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=task_management_system
+DB_USERNAME=root
+DB_PASSWORD=your_password
+```
