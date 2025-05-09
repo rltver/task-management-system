@@ -39,7 +39,7 @@ composer install
 Go to **Database Configuration** then come back
 ```
 php artisan key:generate
-php artisan migrate --seed
+php artisan migrate:fresh --seed
 php artisan storage:link
 php artisan serve
 ```
