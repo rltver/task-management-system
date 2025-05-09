@@ -35,13 +35,18 @@ A **Task Management System** built with **Laravel**, designed to organize and ma
 git clone https://github.com/rltver/task-management-system.git
 cd task-management-system
 composer install
+npm install
 ```
 Go to **Database Configuration** then come back
-```
+```bash
 php artisan key:generate
 php artisan migrate:fresh --seed
 php artisan storage:link
 php artisan serve
+```
+You will also need to start tailwind in another terminal
+```bash
+npm run dev
 ```
 ---
 ## ⚙️ Database Configuration
