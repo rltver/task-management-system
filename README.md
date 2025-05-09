@@ -35,6 +35,9 @@ A **Task Management System** built with **Laravel**, designed to organize and ma
 git clone https://github.com/rltver/task-management-system.git
 cd task-management-system
 composer install
+```
+Go to **Database Configuration** then come back
+```
 php artisan key:generate
 php artisan migrate --seed
 php artisan storage:link
