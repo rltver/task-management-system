@@ -49,7 +49,7 @@ You will also need to start tailwind in another terminal
 npm run dev
 ```
 ---
-## ⚙️ Database Configuration
+## Database Configuration
 
 This project uses **MySQL** as its database. To configure:
 
